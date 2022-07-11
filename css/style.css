@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-/* UTILITIES */
+/*#region UTILITIES */
 
 .col{
     display: flex;
@@ -16,10 +16,23 @@
     flex-direction: row;
 }
 
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .border {
     border: 4px solid #000;
 }
 
+.green {
+    background-color: #00ff00 !important;
+}
+
+.magenta {
+    background-color: #ff00ff !important;
+}
+/*#endregion UTILITIES */
 
 
 
@@ -29,13 +42,6 @@ body {
     font-size: 16px;
     line-height: 1.2;
 
-}
-
-
-header {
-   
-    background-color: red;
-    
 }
 
 nav { 
@@ -60,5 +66,26 @@ nav {
 .header-button > * {
     border: 4px solid #000;
     margin:10px 50px
+
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.cards section > div:not(:last-child) {
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 90vh;
+
+}
+
+.cards section > div:last-child {
+    background-color: gold;
+    align-items: center;
+    padding-top: 100px;
+    flex-basis: 100vh;
 
 }
